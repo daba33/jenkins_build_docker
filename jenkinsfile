@@ -10,7 +10,7 @@ node{
     }
 
     stage ('Run image') {
-        docker.image ('rokaya/nginx').withRun ('-p 80:80') { c ->
+        docker.image ('rokaya/nginx').withRun ('-p 81:80') { c ->
 
         sh 'docker ps'
 
